@@ -7,25 +7,52 @@
 
 */
 
-function dinosaur(name, diet, weight, length, period) {
-  return {
-    name,
-    diet,
-    weight,
-    length,
-    period,
+// function dinosaur(name, diet, weight, length, period) {
+//   return {
+//     name,
+//     diet,
+//     weight,
+//     length,
+//     period,
 
-  }
-}
+//   }
+// }
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
-let tyrannosaurus = dinosaur('tyrannosaurus', 'carnivorous', '7000kg', '12m', 'Late Cretaceous');
+//let tyrannosaurus = dinosaur('tyrannosaurus', 'carnivorous', '7000kg', '12m', 'Late Cretaceous');
+
+const tyrannosaurus = {
+  name: 'tyrannosaurus',
+  diet: 'carnivorous',
+  weight: '7000kg',
+  length: '12m',
+  period: 'Late Cretaceous',
+  roar: function () {
+    return 'RAWERSRARARWERSARARARRRR!'
+  }
+};
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-let stegosaurus = dinosaur('stegosaurus', 'herbivorous', '2000kg', '9m', 'Late Jurassic');
+//let stegosaurus = dinosaur('stegosaurus', 'herbivorous', '2000kg', '9m', 'Late Jurassic');
+
+const stegosaurus = {
+  name: 'stegosaurus',
+  diet: 'herbivorous',
+  weight: '2000kg',
+  length: '9m',
+  period: 'Late Jurassic'
+};
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
-let velociraptor = dinosaur('velociraptor', 'carnivorous', '15kg', '1.8m', 'Late Cretaceous');
+//let velociraptor = dinosaur('velociraptor', 'carnivorous', '15kg', '1.8m', 'Late Cretaceous');
+
+const velociraptor = {
+  name: 'velociraptor',
+  diet: 'carnivorous',
+  weight: '15kg',
+  length: '1.8m',
+  period: 'Late Cretaceous'
+};
 
 // Using your dinosaur objects, log answers to these questions:
 
@@ -44,13 +71,13 @@ console.log(tyrannosaurus.period);
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
 
-function roar(obj) {
-  obj.roar = function () {
-    return 'RAWERSRARARWERSARARARRRR!'
-  }
-}
+// function roar(obj) {
+//   obj.roar = function () {
+//     return 'RAWERSRARARWERSARARARRRR!'
+//   }
+// }
 
-roar(tyrannosaurus);
+//roar(tyrannosaurus);
 
 console.log(tyrannosaurus.roar());
 
@@ -252,3 +279,5 @@ console.log(populationTotal);
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
+
+//completed stretch
